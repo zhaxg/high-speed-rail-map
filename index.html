@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>高铁图2024Q1</title>
+        <script src="openseadragon.min.js"></script>
+    </head>
+
+    <body style="position: absolute; width: 100%;height: 100%;margin:0px;">
+        <div id="openSeadragon1" style="width:100%; height:100%;"></div>
+    </body>
+    <script type="text/javascript">
+        OpenSeadragon({
+            id: "openSeadragon1",
+            prefixUrl: "https://cdn.jsdelivr.net/npm/openseadragon@4.0/build/openseadragon/images/",
+            useCanvas: false,
+            tileSources: {
+                Image: {
+                    xmlns: "http://schemas.microsoft.com/deepzoom/2009",
+                    Url: "./2024Q1/map_files/",
+                    Overlap: "1",
+                    TileSize: "254",
+                    Format: "png",
+                    Size: {
+                        Height: "14033",
+                        Width: "19866"
+                    }
+                }
+            }
+        });
+    </script>
+</html>
