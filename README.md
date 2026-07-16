@@ -2,6 +2,8 @@
 
 基于 OpenSeadragon 的高清中国高铁线路图浏览器，支持无限缩放浏览。
 
+![高铁图预览](2601ZH442.png)
+
 ## 在线浏览
 
 直接打开 [public/index.html](public/index.html) 即可查看。
