@@ -2,8 +2,6 @@
 
 基于 OpenSeadragon 的高清中国高铁线路图浏览器，支持无限缩放浏览。
 
-![高铁图预览](2601ZH442.png)
-
 ## 在线浏览
 
 直接打开 [public/index.html](public/index.html) 即可查看。
@@ -30,7 +28,7 @@
 └── README.md
 ```
 
-## pyramidio.py 用法
+## 切片脚本用法
 
 ```
 python pyramidio.py <input> [-o OUTPUT] [--tile-size 254] [--overlap 1] [--quality 85]
@@ -41,6 +39,14 @@ python pyramidio.py <input> [-o OUTPUT] [--tile-size 254] [--overlap 1] [--quali
 ```bash
 python pyramidio.py 2601ZH442.png -o public/2601ZH442
 python pyramidio.py input.jpg -o output --tile-size 512 --quality 90
+```
+
+### 备用切片工具
+pyramidio-cli-1.1.0.jar
+https://github.com/usnistgov/pyramidio
+
+```bash
+java -jar pyramidio-cli-[version].jar -i my-image.jpg -o (my-output-folder || scheme:///path/file[.tar, .seq])
 ```
 
 ## 更新地图
@@ -54,11 +60,10 @@ python pyramidio.py input.jpg -o output --tile-size 512 --quality 90
 
 | 项目 | 值 |
 |------|-----|
-| 版本 | 2026年1月版 (2601ZH442) |
+| 版本 | 2026年1月版 |
 | 尺寸 | 19845 x 14032 像素 |
 | 切片 | 16级, 5931张 JPG |
 | tile大小 | 254x254, overlap 1px |
-| 数据来源 | tie 中国高铁运营路线图 |
 | 制作人 | 陶岸君，东南大学建筑学院副教授 |
 
 ## 更新日志
