@@ -2,8 +2,6 @@
 
 基于 OpenSeadragon 的高清中国高铁线路图浏览器，支持无限缩放浏览。
 
-![高铁图预览](2601ZH442.png)
-
 ## 在线浏览
 
 直接打开 [public/index.html](public/index.html) 即可查看。
@@ -47,9 +45,6 @@ python pyramidio.py input.jpg -o output --tile-size 512 --quality 90
 pyramidio-cli-1.1.0.jar
 https://github.com/usnistgov/pyramidio
 
-```bash
-java -jar pyramidio-cli-[version].jar -i my-image.jpg -o (my-output-folder || scheme:///path/file[.tar, .seq])
-```
 
 ## 更新地图
 
