@@ -8,7 +8,7 @@
 
 ## 技术栈
 
-- **OpenSeadragon 6.0.2** — 深度缩放 (Deep Zoom) 图片浏览器
+- **OpenSeadragon 6.1.0** — 深度缩放 (Deep Zoom) 图片浏览器
 - **DZI 切片** — Python + Pillow 生成，支持从缩略图到原图的多级加载
 
 ## 项目结构
@@ -65,5 +65,6 @@ https://github.com/usnistgov/pyramidio
 
 ## 更新日志
 
+- **2026-08** — OpenSeadragon 升级至 6.1.0
 - **2026-01** — 更新至2026版路线图, OpenSeadragon 升级至 6.0.2
 - **2025-01** — 初始版本 (2501ZH442)
